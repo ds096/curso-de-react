@@ -1,13 +1,26 @@
-function Tasks() {
+import { ChevronRightIcon } from "lucide-react"
+function Tasks(props) {
+
     return (
-        <div>
-            <h2>Lista de Tarefas</h2>
-            <ul>
-                <li>Tarefa 1</li>
-                <li>Tarefa 2</li>
-                <li>Tarefa 3</li>
-            </ul>
-        </div>
+        <ul className="space-y-4 p-6  bg-slate-200 rounded-md shadow">
+            {props.tasks.map((task) => (
+                <li
+                    key={task.id}
+                    className="flex items-center justify-between  gap-2"
+                >
+                    <button
+                        className="bg-slate-400 text-white text-left p-2 rounded-md w-full  "
+                    >
+                        {task.title}
+                    </button>
+
+                    <button className="bg-slate-400 p-2 rounded-md text-white">
+                        <ChevronRightIcon />
+                    </button>
+
+                </li>
+            ))}
+        </ul>
     )
 }
 
