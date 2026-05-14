@@ -6,7 +6,6 @@ import Tasks from './components/Tasks'
 import AddTask from './components/AddTask'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div>
