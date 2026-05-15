@@ -39,10 +39,10 @@ function App() {
 
   const [tasks, setTasks] = useState(
     [
-      { id: 1, title: "Estudar React", completed: false },
-      { id: 4, title: "Estudar Node.js", completed: false },
-      { id: 2, title: "Fazer exercícios", completed: false },
-      { id: 3, title: "Ler um livro", completed: false },
+      { id: 1, title: "Estudar React", description: "Aprender os fundamentos do React", completed: false },
+      { id: 4, title: "Estudar Node.js", description: "Entender o ambiente de runtime do Node.js", completed: false },
+      { id: 2, title: "Fazer exercícios", description: "Resolver exercícios de programação", completed: false },
+      { id: 3, title: "Ler um livro", description: "Ler um livro sobre comportamento humano", completed: false },
     ]
   )
 
