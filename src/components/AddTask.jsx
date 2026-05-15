@@ -23,7 +23,15 @@ function AddTask({ onAddTaskSubmit }) {
             </input>
 
             <button className="bg-slate-500 px-4 py-2 font-medium text-white p-2 rounded-md w-full"
-                onClick={() => onAddTaskSubmit(title, description)}>
+                onClick={() => {
+                    //Verifica campos em branco
+                    if (!title.trim() || !description.trim()) {
+                        alert("Por favor, preencha todos os campos.");
+                        return;
+                    }
+
+                    onAddTaskSubmit(title, description)
+                }}>
                 Adicionar Tarefa
             </button>
         </div >
