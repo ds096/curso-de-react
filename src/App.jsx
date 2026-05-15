@@ -16,6 +16,8 @@ function App() {
     ]
   )
 
+
+  // Atualiza o campo "completed" da tarefa clicada
   function onTaskClick(taskId) {
     const newTasks = tasks.map((task) => {
       if (task.id === taskId) {
@@ -27,11 +29,17 @@ function App() {
     setTasks(newTasks);
   }
 
+  // Deleta a tarefa clicada
+  function onTaskDelete(taskId) {
+    const newTasks = tasks.filter((task) => task.id !== taskId);
+    setTasks(newTasks);
+  }
+
   return (
     <div className='w-full h-screen flex justify-center p-6 bg-slate-500 '>
       <div className=' w-200'>
         <h1 className='text-3xl text-slate-100 font-bold '>Gerenciador de Tarefas</h1>
-        <Tasks tasks={tasks} onTaskClick={onTaskClick} />
+        <Tasks tasks={tasks} onTaskClick={onTaskClick} onTaskDelete={onTaskDelete} />
         <AddTask />
       </div>
     </div>
