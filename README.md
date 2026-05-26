@@ -4,7 +4,8 @@ Um aplicativo simples de gerenciamento de tarefas construído com React, Vite e 
 
 ## Demonstração
 
-Acesse a versão online do aplicativo: ([daniel-curso-de-react.vercel.app])
+Acesse a versão online do aplicativo: [https://daniel-curso-de-react.vercel.app/](https://daniel-curso-de-react.vercel.app/)
+
 
 
 ## Funcionalidades
