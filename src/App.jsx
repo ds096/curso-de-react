@@ -65,7 +65,7 @@ function App() {
   )
 
   return (
-    <div className='w-full h-screen flex justify-center p-6 bg-slate-500 '>
+    <div className='w-full flex justify-center p-6 bg-slate-500 h-full '>
       <div className='space-y-4 w-200'>
         <Title>Gerenciador de Tarefas</Title>
         <AddTask onAddTaskSubmit={onAddTaskSubmit} />

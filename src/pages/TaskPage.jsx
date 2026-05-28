@@ -10,9 +10,9 @@ function TaskPage() {
     const taskCompleted = searchParams.get("completed");
 
     return (
-        <div className='w-full h-screen justify-center p-6 bg-slate-500 '>
+        <div className='w-full h-full justify-center p-6 bg-slate-500 '>
             <div className='space-y-4'>
-                <div className="flex justify-center relative mb-6">
+                <div className="flex justify-center relative mb-6 text-white">
                     <button
                         className=" absolute left-0 top-0 bottom-0"
                         onClick={() => { navigate(-1) }}>
